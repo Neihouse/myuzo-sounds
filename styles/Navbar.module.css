@@ -1,0 +1,9 @@
+.navbar {
+  background-color: var(--astronomical-teal);
+}
+
+.navbar .ant-menu-item-selected, .navbar .ant-menu-item:hover {
+  background-color: var(--vibrant-cyan) !important;
+}
+
+/* Add more custom styles as needed */

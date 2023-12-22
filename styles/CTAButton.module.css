@@ -1,0 +1,26 @@
+.ctaButton {
+  background-color: var(--vibrant-cyan);
+  border-color: var(--vibrant-cyan);
+  color: var(--deep-space-blue);
+  font-weight: bold;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 30px;
+}
+
+.ctaButton:hover, .ctaButton:focus {
+  background-color: var(--soft-amber);
+  border-color: var(--soft-amber);
+  color: var(--midnight-black);
+}
+
+@media (max-width: 768px) {
+  .ctaButton {
+    /* Adjust button size for mobile devices */
+    font-size: 14px;
+    height: 35px;
+    padding: 0 20px;
+  }
+}
+
+/* Add more custom styles as needed */
