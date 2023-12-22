@@ -5,6 +5,7 @@ type SampleItemProps = {
   sample: {
     id: string;
     title: string;
+    description: string;
     imageUrl: string;
     audioUrl: string;
   };
@@ -25,8 +26,7 @@ const SampleItem: React.FC<SampleItemProps> = ({ sample, onSampleSelect }) => {
   };
 
   return (
-    <SampleCard
-      sample={sample}
+    <SampleCard sample={sample}
       onPlay={handlePlay}
       onDownload={handleDownload}
       onPurchase={handlePurchase}

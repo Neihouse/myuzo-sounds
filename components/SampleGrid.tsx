@@ -16,7 +16,7 @@ const SampleGrid: React.FC<SampleGridProps> = ({ samples }) => {
   return (
     <div className={styles.sampleGrid}>
       {samples.map((sample) => (
-        <SampleCard key={sample.id} {...sample} />
+        <SampleCard key={sample.id} sample={sample} onPlay={() => {}} onDownload={() => {}} onPurchase={() => {}} />
       ))}
     </div>
   );

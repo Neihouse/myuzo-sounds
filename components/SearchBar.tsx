@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styles from '../styles/SearchBar.module.css';
 
-const SearchBar = ({ onSearch }) => {
+const SearchBar: React.FC<{ onSearch: (term: string) => void }> = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSearch = (event) => {
+  const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     onSearch(searchTerm);
   };

@@ -6,7 +6,7 @@ import FooterSection from '../components/FooterSection';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <NavigationBar user={null} />
+      <NavigationBar />
       <main>
         <Component {...pageProps} />
       </main>

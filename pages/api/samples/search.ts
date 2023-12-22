@@ -11,7 +11,7 @@ export default async function handler(
     if (typeof query === 'string') {
       try {
         const samples = await searchSamples(query);
-        res.status(200).json({ samples });
+        res.status(200).json({ samples: samples as unknown as AudioProcessingResult[] });
       } catch (error) {
         res.status(500).json({ error: 'Failed to search for samples' });
       }

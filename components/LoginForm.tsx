@@ -8,12 +8,12 @@ type LoginFormProps = {
 const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setCredentials({ ...credentials, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onLogin(credentials);
   };

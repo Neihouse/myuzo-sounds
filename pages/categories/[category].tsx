@@ -11,8 +11,8 @@ export default function CategoryPage() {
   return (
     <div>
       <Navigation />
-      <Filters category={category} />
-      <SampleList category={category} />
+      {/* <Filters category={category} /> */}
+      {/* <SampleList category={category} /> */}
     </div>
   );
 }

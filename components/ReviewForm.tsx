@@ -8,12 +8,12 @@ type ReviewFormProps = {
 const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
   const [review, setReview] = useState({ author: '', content: '', rating: 5 });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setReview({ ...review, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onSubmit(review);
   };

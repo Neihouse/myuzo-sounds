@@ -35,7 +35,7 @@ const SearchPage = () => {
     <div>
       <SearchBar onSearch={handleSearch} />
       <FilterBar categories={categories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
-      <SampleList samples={samples} onSampleSelect={() => {}} />
+      {/* <SampleList samples={samples} onSampleSelect={() => {}} /> */}
     </div>
   );
 };

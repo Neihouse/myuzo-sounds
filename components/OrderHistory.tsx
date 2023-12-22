@@ -21,7 +21,7 @@ const OrderHistory: React.FC<OrderHistoryProps> = ({ orders }) => {
     <div className={styles.orderHistory}>
       <h2>Order History</h2>
       {orders.map((order) => (
-        <OrderDetails key={order.id} {...order} />
+        <OrderDetails key={order.id} orderId={order.id} {...order} />
       ))}
     </div>
   );

@@ -8,12 +8,12 @@ type SignupFormProps = {
 const SignupForm: React.FC<SignupFormProps> = ({ onSignup }) => {
   const [user, setUser] = useState({ username: '', email: '', password: '' });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setUser({ ...user, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onSignup(user);
   };

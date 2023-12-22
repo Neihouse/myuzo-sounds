@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { sampleSchema } from '../../schemas/sampleSchema';
-import { AudioProcessingResult } from '../../models/AudioProcessingResult';
+import { sampleSchema } from '../../../schemas/sampleSchema';
+import { AudioProcessingResult } from '../../../models/AudioProcessingResult';
 
 // Mock database
 const samplesDatabase: AudioProcessingResult[] = [];
@@ -18,10 +18,11 @@ export default async function handler(
       await sampleSchema.validate(req.body);
       // Add the validated sample to the mock database
       samplesDatabase.push(req.body);
-      res.status(201).json({ message: 'Sample added successfully' });
+      res.status(201).json({ samples: samplesDatabase });
     } catch (error) {
-      if (error instanceof Yup.ValidationError) {
-        res.status(400).json({ error: error.errors.join(', ') });
+      if (error instanceof Error && 'errors' in error) {
+        const validationError = error as { errors: string[] };
+        res.status(400).json({ error: validationError.errors.join(', ') });
       } else {
         res.status(500).json({ error: 'An unexpected error occurred' });
       }

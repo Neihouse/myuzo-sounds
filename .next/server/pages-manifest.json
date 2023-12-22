@@ -1,6 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js"
-}
+{"/_app":"pages/_app.js","/_error":"pages/_error.js","/about":"pages/about.html","/account":"pages/account.html","/api/audio/process":"pages/api/audio/process.js","/api/audio/update":"pages/api/audio/update.js","/api/audio/upload":"pages/api/audio/upload.js","/api/categories":"pages/api/categories.js","/api/fetchSamples":"pages/api/fetchSamples.js","/api/genres":"pages/api/genres.js","/api/instruments":"pages/api/instruments.js","/api/moods":"pages/api/moods.js","/api/processPayment":"pages/api/processPayment.js","/api/purchases":"pages/api/purchases.js","/api/samples/[id]":"pages/api/samples/[id].js","/api/samples":"pages/api/samples.js","/api/samples/search":"pages/api/samples/search.js","/api/searchSamples":"pages/api/searchSamples.js","/api/submitFeedback":"pages/api/submitFeedback.js","/api/upload":"pages/api/upload.js","/api/uploadSample":"pages/api/uploadSample.js","/api/users":"pages/api/users.js","/blog":"pages/blog.html","/checkout":"pages/checkout.html","/categories/[category]":"pages/categories/[category].html","/community":"pages/community.html","/feedback":"pages/feedback.html","/":"pages/index.html","/samples/[sampleId]":"pages/samples/[sampleId].html","/search":"pages/search.html","/upload":"pages/upload.html","/categories":"pages/categories.js","/_document":"pages/_document.js","/404":"pages/404.html"}

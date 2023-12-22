@@ -4,7 +4,7 @@ import styles from '../styles/NewsletterSignup.module.css';
 const NewsletterSignup = () => {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Sign up for the newsletter
   };

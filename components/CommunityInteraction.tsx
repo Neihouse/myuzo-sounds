@@ -2,12 +2,11 @@ import React from 'react';
 import styles from '../styles/CommunityInteraction.module.css';
 
 const CommunityInteraction = () => {
+  // Interaction logic will go here
+
   return (
     <div className={styles.communityInteraction}>
-      <h2>Join the Discussion</h2>
-      {/* Community interaction elements will go here */}
-      <textarea placeholder="Share your thoughts..."></textarea>
-      <button>Post Comment</button>
+      {/* Interaction elements will go here */}
     </div>
   );
 };
