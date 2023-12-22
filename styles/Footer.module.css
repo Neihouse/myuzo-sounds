@@ -1,7 +1,29 @@
 .footer {
+<<<<<<< HEAD
   background-color: var(--deep-space-blue);
   color: var(--off-white);
   text-align: center;
   padding: 20px;
   font-size: 16px;
+=======
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #333;
+  color: white;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+>>>>>>> 672a1f4b (Committing changes)
 }

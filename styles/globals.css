@@ -1,68 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Custom color scheme */
-:root {
-  --deep-space-blue: #0b3d91;
-  --vibrant-cyan: #00ffec;
-  --astronomical-teal: #007d7e;
-  --soft-amber: #ffc400;
-  --metallic-silver: #aaa9ad;
-  --off-white: #f8f8ff;
-  --light-grey: #d3d3d3;
-  --midnight-black: #000000;
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-/* Custom classes for color scheme */
-.bg-deep-space-blue {
-  background-color: var(--deep-space-blue);
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.text-deep-space-blue {
-  color: var(--deep-space-blue);
-}
-
-.bg-vibrant-cyan {
-  background-color: var(--vibrant-cyan);
-}
-
-.text-vibrant-cyan {
-  color: var(--vibrant-cyan);
-}
-
-.bg-astronomical-teal {
-  background-color: var(--astronomical-teal);
-}
-
-.text-astronomical-teal {
-  color: var(--astronomical-teal);
-}
-
-.bg-soft-amber {
-  background-color: var(--soft-amber);
-}
-
-.text-soft-amber {
-  color: var(--soft-amber);
-}
-
-.bg-off-white {
-  background-color: var(--off-white);
-}
-
-.text-off-white {
-  color: var(--off-white);
-}
-
-.bg-light-grey {
-  background-color: var(--light-grey);
-}
-
-.text-light-grey {
-  color: var(--light-grey);
-}
-
-.text-midnight-black {
-  color: var(--midnight-black);
+* {
+  box-sizing: border-box;
 }

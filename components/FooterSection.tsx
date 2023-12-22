@@ -7,8 +7,8 @@ const FooterSection = () => (
     <div className={styles.footerContent}>
       <p>&copy; {new Date().getFullYear()} Myuzo Sounds. All rights reserved.</p>
       <div className={styles.linksContainer}>
-        <Link href="/privacy"><a className={styles.link}>Privacy Policy</a></Link>
-        <Link href="/terms"><a className={styles.link}>Terms of Service</a></Link>
+        <Link href="/privacy" legacyBehavior><a className={styles.link}>Privacy Policy</a></Link>
+        <Link href="/terms" legacyBehavior><a className={styles.link}>Terms of Service</a></Link>
       </div>
     </div>
   </footer>

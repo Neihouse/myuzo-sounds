@@ -1,25 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
+import { Card } from 'antd';
 import styles from '../styles/ProductCard.module.css';
 
 type ProductCardProps = {
   id: string;
-  name: string;
-  price: number;
+  title: string;
+  description: string;
   imageUrl: string;
 };
 
-const ProductCard: React.FC<ProductCardProps> = ({ id, name, price, imageUrl }) => {
-  return (
-    <div className={styles.productCard}>
-      <img src={imageUrl} alt={name} className={styles.productImage} />
-      <div className={styles.productInfo}>
-        <h3>{name}</h3>
-        <p>${price.toFixed(2)}</p>
-        <Link href={`/products/${id}`}>View Product</Link>
-      </div>
-    </div>
-  );
-};
+const ProductCard: React.FC<ProductCardProps> = ({ id, title, description, imageUrl }) => (
+  <Card
+    hoverable
+    style={{ width: 240 }}
+    cover={<img alt={title} src={imageUrl} />}
+    className={styles.productCard}
+  >
+    <Card.Meta title={<Link href={`/products/${id}`}>{title}</Link>} description={description} />
+  </Card>
+);
 
 export default ProductCard;

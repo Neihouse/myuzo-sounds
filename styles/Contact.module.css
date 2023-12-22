@@ -1,0 +1,10 @@
+.container {
+  padding: 50px;
+  text-align: center;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}

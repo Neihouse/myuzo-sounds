@@ -1,0 +1,7 @@
+.categoryList {
+  padding: 20px;
+}
+
+.categoryList .ant-list-item {
+  cursor: pointer;
+}

@@ -1,27 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
+import { List } from 'antd';
 import styles from '../styles/CategoryList.module.css';
 
 type CategoryListProps = {
-  categories: Array<{ id: string; name: string; }>,
-  selectedCategoryId: string,
-  onSelectCategory: (id: string) => void
+  categories: Array<{ name: string; slug: string }>;
 };
 
-const CategoryList: React.FC<CategoryListProps> = ({ categories, selectedCategoryId, onSelectCategory }) => {
-  return (
-    <ul className={styles.categoryList}>
-      {categories.map((category) => (
-        <li
-          key={category.id}
-          className={selectedCategoryId === category.id ? styles.selected : ''}
-          onClick={() => onSelectCategory(category.id)}
-        >
-          {category.name}
-        </li>
-      ))}
-    </ul>
-  );
-};
+const CategoryList: React.FC<CategoryListProps> = ({ categories }) => (
+  <List
+    grid={{ gutter: 16, column: 4 }}
+    dataSource={categories}
+    renderItem={(item) => (
+      <List.Item>
+        <Link href={`/categories/${item.slug}`}>{item.name}</Link>
+      </List.Item>
+    )}
+    className={styles.categoryList}
+  />
+);
 
 export default CategoryList;

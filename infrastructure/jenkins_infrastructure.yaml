@@ -1,0 +1,30 @@
+resources:
+- name: jenkins-vm-instance
+  type: compute.v1.instance
+  properties:
+    zone: us-central1-f
+    machineType: https://www.googleapis.com/compute/v1/projects/ecommerce-myuzo-sounds/zones/us-central1-f/machineTypes/n1-standard-1
+    disks:
+    - deviceName: boot
+      type: PERSISTENT
+      boot: true
+      autoDelete: true
+      initializeParams:
+        sourceImage: https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/family/debian-11
+    networkInterfaces:
+    - network: https://www.googleapis.com/compute/v1/projects/ecommerce-myuzo-sounds/global/networks/default
+      accessConfigs:
+      - name: External NAT
+        type: ONE_TO_ONE_NAT
+    metadata:
+      items:
+      - key: startup-script
+        value: |
+          #!/bin/bash
+          apt-get update
+          apt-get install -y default-jdk
+          wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add -
+          sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+          apt-get update
+          apt-get install -y jenkins
+          systemctl start jenkins

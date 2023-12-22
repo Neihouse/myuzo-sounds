@@ -1,4 +1,5 @@
 .container {
+<<<<<<< HEAD
   background-color: #0b3d91; /* Deep Space Blue */
   color: #f8f8ff; /* Off-White */
 }
@@ -23,3 +24,25 @@
 }
 
 /* Add more custom styles as needed */
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.contentStyle {
+  text-align: center;
+  background: #364d79;
+  color: #fff;
+  line-height: 160px;
+  height: 160px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+>>>>>>> 672a1f4b (Committing changes)

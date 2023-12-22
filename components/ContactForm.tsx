@@ -1,41 +1,57 @@
 import React, { useState } from 'react';
+import { Form, Input, Button, message } from 'antd';
+import axios from 'axios';
 import styles from '../styles/ContactForm.module.css';
 
 const ContactForm = () => {
-  const [contactInfo, setContactInfo] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const [form] = Form.useForm();
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setContactInfo({ ...contactInfo, [name]: value });
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Send contact information
+  const onFinish = async (values: { name: string; email: string; message: string }) => {
+    try {
+      // Replace with your API endpoint
+      const response = await axios.post('/api/contact', values);
+      if (response.status === 200) {
+        message.success('Message sent successfully!');
+        form.resetFields();
+      } else {
+        message.error('Failed to send message. Please try again later.');
+      }
+    } catch (error) {
+      message.error('An error occurred. Please try again later.');
+    }
   };
 
   return (
-    <form className={styles.contactForm} onSubmit={handleSubmit}>
-      <div className={styles.formGroup}>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" value={contactInfo.name} onChange={handleChange} required />
-      </div>
-      <div className={styles.formGroup}>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" value={contactInfo.email} onChange={handleChange} required />
-      </div>
-      <div className={styles.formGroup}>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message" value={contactInfo.message} onChange={handleChange} required />
-      </div>
-      <div className={styles.formGroup}>
-        <button type="submit">Send Message</button>
-      </div>
-    </form>
+    <Form
+      form={form}
+      name="contact"
+      onFinish={onFinish}
+      className={styles.contactForm}
+    >
+      <Form.Item
+        name="name"
+        rules={[{ required: true, message: 'Please input your name!' }]}
+      >
+        <Input placeholder="Name" />
+      </Form.Item>
+      <Form.Item
+        name="email"
+        rules={[{ required: true, message: 'Please input your email!', type: 'email' }]}
+      >
+        <Input placeholder="Email" />
+      </Form.Item>
+      <Form.Item
+        name="message"
+        rules={[{ required: true, message: 'Please input your message!' }]}
+      >
+        <Input.TextArea placeholder="Message" />
+      </Form.Item>
+      <Form.Item>
+        <Button type="primary" htmlType="submit">
+          Send Message
+        </Button>
+      </Form.Item>
+    </Form>
   );
 };
 
