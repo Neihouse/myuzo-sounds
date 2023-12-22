@@ -1,5 +1,7 @@
 # dependencies
 node_modules/
+*.node
+skaffold
 
 # production
 /build
@@ -151,6 +153,8 @@ $RECYCLE.BIN/
 
 # misc
 node_modules/
+*.node
+skaffold
 
 # misc
 jspm_packages/
