@@ -1,0 +1,52 @@
+.audioPlayer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+
+.playButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.playButton svg {
+  fill: #0070f3;
+}
+
+.playButton:hover svg,
+.playButton:focus svg {
+  fill: #0056b3;
+}
+
+.timeline {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ddd;
+  height: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.timeline::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #0070f3;
+  cursor: pointer;
+}
+
+.timeline::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #0070f3;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.uploadForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input[type='file'] {
+  border: none;
+}
+
+.submitButton {
+  padding: 0.5rem 1rem;
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #003399;
+}
+
+.instructions {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+  margin-top: 1rem;
+}

@@ -1,0 +1,26 @@
+.footer {
+  background-color: #101010;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.linksContainer {
+  margin-top: 1rem;
+}
+
+.link {
+  margin: 0 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
