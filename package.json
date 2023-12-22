@@ -7,12 +7,12 @@
     "start": "next start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --write .",
     "format": "prettier --write ."
   },
   "dependencies": {
     "@google-cloud/storage": "^7.7.0",
+    "@paypal/paypal-js": "^8.0.0",
+    "@stripe/stripe-js": "^2.2.2",
     "@types/formidable": "^3.4.5",
     "antd": "^5.12.5",
     "firebase": "^10.7.1",
