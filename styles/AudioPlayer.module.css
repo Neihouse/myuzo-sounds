@@ -3,8 +3,8 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: #f9f9f9;
-  border: 1px solid #eaeaea;
+  background-color: #0A2239; /* Deep Space Blue */
+  border: 1px solid #163E69; /* Rich Sapphire */
   border-radius: 10px;
 }
 
@@ -15,19 +15,19 @@
 }
 
 .playButton svg {
-  fill: #0070f3;
+  fill: #0077FF; /* Bright Electric Blue */
 }
 
 .playButton:hover svg,
 .playButton:focus svg {
-  fill: #0056b3;
+  fill: #163E69; /* Rich Sapphire */
 }
 
 .timeline {
   width: 100%;
   -webkit-appearance: none;
   appearance: none;
-  background: #ddd;
+  background: #D9E2EC; /* Light Grey */
   height: 5px;
   border-radius: 5px;
   cursor: pointer;

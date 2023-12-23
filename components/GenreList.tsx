@@ -16,7 +16,7 @@ const GenreList = () => {
     <ul className={styles.genreList}>
       {genres.map((genre) => (
         <li key={genre}>
-          <Link href={`/categories/${genre.toLowerCase()}`}>{genre}</Link>
+          <Link href={`/categories/${genre.toLowerCase()}`} legacyBehavior>{genre}</Link>
         </li>
       ))}
     </ul>

@@ -5,8 +5,9 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
+<<<<<<< HEAD
 <<<<<<< HEAD
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -21,6 +22,9 @@
 =======
     "strict": false,
 >>>>>>> 672a1f4b (Committing changes)
+=======
+    "strict": true,
+>>>>>>> 7e245f7d (Convert all .js files to .ts(x) and optimize tsconfig.json)
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "incremental": true,

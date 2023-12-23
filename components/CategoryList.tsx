@@ -13,7 +13,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ categories }) => (
     dataSource={categories}
     renderItem={(item) => (
       <List.Item>
-        <Link href={`/categories/${item.slug}`}>{item.name}</Link>
+        <Link href={`/categories/${item.slug}`} legacyBehavior>{item.name}</Link>
       </List.Item>
     )}
     className={styles.categoryList}

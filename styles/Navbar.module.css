@@ -1,5 +1,6 @@
 .navbar {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: var(--astronomical-teal);
 }
 
@@ -11,6 +12,10 @@
 =======
   background-color: #333;
   color: white;
+=======
+  background-color: #0A2239; /* Deep Space Blue */
+  color: #F0F4F8; /* Off-White */
+>>>>>>> 7e245f7d (Convert all .js files to .ts(x) and optimize tsconfig.json)
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -25,10 +30,15 @@
 .links a {
   margin-left: 1rem;
   text-decoration: none;
-  color: white;
+  color: #F0F4F8; /* Off-White */
 }
 
 .links a:hover {
   text-decoration: underline;
+<<<<<<< HEAD
 }
 >>>>>>> 672a1f4b (Committing changes)
+=======
+  color: #163E69; /* Rich Sapphire on hover */
+}
+>>>>>>> 7e245f7d (Convert all .js files to .ts(x) and optimize tsconfig.json)

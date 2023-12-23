@@ -195,3 +195,7 @@ jspm_packages/
 Network Trash Folder
 Temporary Items
 .apdisk
+tsconfig.tsbuildinfo
+tsconfig.tsbuildinfo
+styles/*.module.css
+tsconfig.tsbuildinfo

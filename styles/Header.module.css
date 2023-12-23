@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
-  background-color: #333;
-  color: white;
+  background-color: #0A2239; /* Deep Space Blue */
+  color: #F0F4F8; /* Off-White */
 }
 
 .logo {
@@ -15,9 +15,9 @@
 .menu {
   background-color: transparent;
   border-bottom: none;
-  color: white;
+  color: #F0F4F8; /* Off-White */
 }
 
 .menu a {
-  color: white;
+  color: #F0F4F8; /* Off-White */
 }

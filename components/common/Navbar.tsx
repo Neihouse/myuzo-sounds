@@ -6,18 +6,18 @@ const Navbar = () => (
   <nav className={styles.navbar}>
     <div className={styles.logo}>
       <Link href="/">
-        <a>MyUzo</a>
+        MyUzo
       </Link>
     </div>
     <div className={styles.links}>
       <Link href="/about">
-        <a>About</a>
+        About
       </Link>
       <Link href="/products">
-        <a>Products</a>
+        Products
       </Link>
       <Link href="/contact">
-        <a>Contact</a>
+        Contact
       </Link>
     </div>
   </nav>

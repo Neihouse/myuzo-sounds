@@ -17,7 +17,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ id, title, description, image
     cover={<img alt={title} src={imageUrl} />}
     className={styles.productCard}
   >
-    <Card.Meta title={<Link href={`/products/${id}`}>{title}</Link>} description={description} />
+    <Card.Meta title={<Link href={`/products/${id}`} legacyBehavior>{title}</Link>} description={description} />
   </Card>
 );
 

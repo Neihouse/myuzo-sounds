@@ -9,8 +9,8 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
-  background-color: #333;
-  color: white;
+  background-color: #0A2239; /* Deep Space Blue */
+  color: #F0F4F8; /* Off-White */
 }
 
 .content {
@@ -24,6 +24,10 @@
 }
 
 .nav a {
+<<<<<<< HEAD
   color: white;
 >>>>>>> 672a1f4b (Committing changes)
+=======
+  color: #F0F4F8; /* Off-White */
+>>>>>>> 7e245f7d (Convert all .js files to .ts(x) and optimize tsconfig.json)
 }

@@ -1,5 +1,7 @@
 # Ecommerce Myuzo Sounds
 
+## Runtime Error Management System
+
 This project is an e-commerce platform for audio samples, built with React, Next.js, and Tailwind CSS. It features a modern design with a responsive layout, optimized for a great user experience.
 
 ## Features
@@ -49,6 +51,10 @@ Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) fo
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
+
+---
+
+## Runtime Error Management System
 
 - Thanks to all the contributors who have helped to improve the platform.
 - Special thanks to the OpenAI team for providing the API used for dynamic content generation.

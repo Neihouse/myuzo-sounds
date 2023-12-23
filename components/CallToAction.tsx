@@ -7,7 +7,7 @@ const CallToAction = () => {
       <h2>Join Our Community</h2>
       <p>Sign up and start exploring the world of music samples.</p>
       <Link href="/signup">
-        <a>Sign Up Now</a>
+        Sign Up Now
       </Link>
     </section>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Button, Carousel, Card } from 'antd';
 import 'antd/dist/antd.css';
 =======
@@ -66,5 +67,15 @@ export default function Home() {
       </div>
 >>>>>>> 672a1f4b (Committing changes)
     </div>
+=======
+import Layout from '../components/Layout';
+
+export default function Home() {
+  return (
+    <Layout>
+      <h1>Welcome to MyUzo E-commerce</h1>
+      {/* Content goes here */}
+    </Layout>
+>>>>>>> 7e245f7d (Convert all .js files to .ts(x) and optimize tsconfig.json)
   );
 }

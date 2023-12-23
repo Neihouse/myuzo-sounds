@@ -22,15 +22,6 @@ export default function CategoryPage({ products, category }) {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { slug } = context.params;
   const products = await getProductsByCategory(slug);
-  if (!slug || !products) {
-    return {
-      redirect: {
-        destination: '/404',
-        permanent: false,
-      },
-    };
-  }
-
   const category = slug.replace(/-/g, ' ').toUpperCase();
   return {
     props: { products, category },
