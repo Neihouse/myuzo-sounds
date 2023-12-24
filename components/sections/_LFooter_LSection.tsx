@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../styles/FooterSection.module.css';
+import styles from '../../styles/FooterSection.module.css';
 
 const FooterSection = () => (
   <footer className={styles.footer}>

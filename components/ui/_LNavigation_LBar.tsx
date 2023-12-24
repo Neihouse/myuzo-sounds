@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../styles/NavigationBar.module.css';
+import styles from '../../styles/NavigationBar.module.css';
 
 const NavigationBar = () => {
   return (

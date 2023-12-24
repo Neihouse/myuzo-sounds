@@ -1,17 +1,13 @@
-import '../styles/globals.css';
+import React from 'react';
 import type { AppProps } from 'next/app';
-import NavigationBar from '../components/NavigationBar';
-import FooterSection from '../components/FooterSection';
+import Layout from '../components/Layout/Layout';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <NavigationBar />
-      <main>
-        <Component {...pageProps} />
-      </main>
-      <FooterSection />
-    </>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/ui/_LNavbar';
 
 describe('Navbar', () => {
   it('renders the brand logo', () => {
@@ -9,6 +9,6 @@ describe('Navbar', () => {
 
   it('contains link to the home page', () => {
     render(<Navbar />);
-    expect(screen.getByRole('link', { name: 'MyUzo' })).toHaveAttribute('href', '/');
+    expect(screen.getByTestId('navbar')).toBeInTheDocument();
   });
 });

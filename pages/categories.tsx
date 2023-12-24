@@ -26,7 +26,7 @@ const CategoryPage: React.FC<CategoryProps> = ({ samples, category }) => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { category } = context.query;
   const allSamples = await retrieveMusicSamples();
-  const samples = allSamples.filter((sample: any) => sample.category === category);
+  const samples = allSamples.filter((sample: // TODO: Replace 'unknown' with appropriate type) => sample.category === category);
   return {
     props: { samples, category },
   };

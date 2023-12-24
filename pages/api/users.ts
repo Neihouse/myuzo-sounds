@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       if (error instanceof Error) {
           res.status(400).json({ error: error.message });
         } else {
-          res.status(500).json({ error: 'An unexpected error occurred' });
+          res.status(500).json({ error: 'Failed to create user due to a server error' });
         }
     }
   } else {

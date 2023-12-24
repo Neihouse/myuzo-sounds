@@ -1,5 +1,5 @@
 // This is a mock function to simulate payment processing
-export const processSamplePayment = async (paymentData: any): Promise<boolean> => {
+export const processSamplePayment = async (paymentData: unknown): Promise<boolean> => {
   // In a real-world scenario, you would integrate with a payment gateway
   console.log('Processing payment with data:', paymentData);
   // Simulate payment processing delay

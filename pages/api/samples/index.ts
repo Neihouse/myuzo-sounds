@@ -24,7 +24,7 @@ export default async function handler(
         const validationError = error as { errors: string[] };
         res.status(400).json({ error: validationError.errors.join(', ') });
       } else {
-        res.status(500).json({ error: 'An unexpected error occurred' });
+        res.status(500).json({ error: 'Failed to process sample request due to a server error' });
       }
     }
   } else {

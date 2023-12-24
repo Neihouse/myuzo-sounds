@@ -6,14 +6,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
       // Validate the request body against the purchase schema
       await purchaseSchema.validate(req.body);
-      // TODO: Implement purchase creation logic
-      // This would involve saving the purchase details to the database
+      // TODO: Implement purchase creation logic:
+      // 1. Connect to the database using a database client or ORM.
+      // 2. Insert the new purchase into the 'purchases' collection/table.
+      // 3. Return the ID of the newly recorded purchase.
       res.status(201).json({ message: 'Purchase recorded successfully' });
     } catch (error) {
       if (error instanceof Error) {
           res.status(400).json({ error: error.message });
         } else {
-          res.status(500).json({ error: 'An unexpected error occurred' });
+          res.status(500).json({ error: 'Failed to record purchase due to a server error' });
         }
     }
   } else {

@@ -1,18 +1,24 @@
 import React from 'react';
 import Head from 'next/head';
-import ContactForm from '../components/ContactForm';
 import styles from '../styles/Contact.module.css';
 
-export default function Contact() {
+const Contact: React.FC = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Contact Us - Myuzo Sounds</title>
-        <meta name="description" content="Get in touch with Myuzo Sounds. We're here to help with any questions or feedback you may have." />
+        <title>Contact Us - MyUzo Sounds</title>
+        <meta name="description" content="Get in touch with MyUzo Sounds" />
       </Head>
-      <h1 className={styles.title}>Contact Us</h1>
-      <ContactForm />
-      {/* TODO: Add additional contact information or a map here */}
+
+      <main className={styles.main}>
+        <h1>Contact Us</h1>
+        <p>
+          Have questions or need support? Contact our team for assistance.
+        </p>
+        {/* Contact form or details go here */}
+      </main>
     </div>
   );
-}
+};
+
+export default Contact;

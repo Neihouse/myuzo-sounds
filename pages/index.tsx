@@ -1,6 +1,7 @@
 import React from 'react';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Button, Carousel, Card } from 'antd';
 import 'antd/dist/antd.css';
 =======
@@ -69,13 +70,41 @@ export default function Home() {
     </div>
 =======
 import Layout from '../components/Layout';
+=======
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+>>>>>>> 81810322 (Set up Google Private Marketplace collections)
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
+<<<<<<< HEAD
     <Layout>
       <h1>Welcome to MyUzo E-commerce</h1>
       {/* Content goes here */}
     </Layout>
 >>>>>>> 7e245f7d (Convert all .js files to .ts(x) and optimize tsconfig.json)
+=======
+    <div className={styles.container}>
+      <Head>
+        <title>MyUzo Sounds</title>
+        <meta name="description" content="Welcome to MyUzo Sounds" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main className={styles.main}>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://myuzosounds.com">MyUzo Sounds!</a>
+        </h1>
+
+        {/* Content goes here */}
+      </main>
+
+      <footer className={styles.footer}>
+        {/* Footer content */}
+      </footer>
+    </div>
+>>>>>>> 81810322 (Set up Google Private Marketplace collections)
   );
-}
+};
+
+export default Home;
